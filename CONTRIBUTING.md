@@ -11,9 +11,9 @@ project’s goals of clarity, rigor, and transferable understanding.
 ## What This Repository Values
 
 Eisengrau prioritises:
-- **algorithmic reasoning over submission results**,  
-- **clear explanation over minimal code**,  
-- **transferable patterns over one-off tricks**,  
+- **algorithmic reasoning over submission results**,
+- **clear explanation over minimal code**,
+- **transferable patterns over one-off tricks**,
 - **correctness and insight over cleverness**.
 
 Contributions should aim to *teach* something reusable.
@@ -30,7 +30,7 @@ You are welcome to contribute:
 - clarifications of common pitfalls,
 - improvements to organisation or documentation.
 
-Both beginner-friendly and advanced material are welcome, provided it is
+Both beginner-friendly and advanced material are welcome, provided they are
 clearly framed.
 
 ---
@@ -55,27 +55,128 @@ If you are unsure where something fits, open an issue or discussion first.
 
 ## Problem Directory Structure
 
-A typical problem directory may include:
-- one or more implementations (different approaches or trade-offs),
-- a `README.md` explaining the reasoning and constraints,
-- notes on complexity and limitations.
+Each problem topic in this repository follows a **standardised, author-aware
+directory structure**.
 
-Not every contribution needs to follow the same format rigidly.
-Clarity and instructional value take precedence.
+The purpose of this structure is to:
+- preserve clear authorship,
+- separate theory from implementation,
+- enable rigorous mathematical referencing,
+- ensure long-term maintainability and pedagogical clarity.
 
 ---
 
-## Code and Explanation Guidelines
+### Required Directory Layout
 
-When contributing code:
-- prioritise readability over brevity,
-- avoid unnecessary micro-optimisations unless they are the point,
-- include comments where reasoning is non-obvious.
+At minimum, each problem topic must be organised as follows:
 
-When contributing explanations:
-- explain *why* an approach works,
-- highlight trade-offs between alternatives,
-- note common mistakes or misleading intuitions.
+```
+<problem_topic>/
+└── <language>/
+  └── <author_name>/
+    └── <approach_name>/
+      ├── notes/
+      │ ├── theory.tex
+      │ └── mathematics.tex
+      │
+      └── code/
+      └── submission.<ext>
+```
+Where:
+- `<problem_topic>` represents the algorithmic problem or concept,
+- `<language>` is the programming language used (e.g. `python`, `cpp`, `java`),
+- `<author_name>` is the contributor’s name or handle,
+- `<approach_name>` identifies a distinct solution strategy,
+- `<ext>` corresponds to the chosen language.
+
+---
+
+### Example
+
+For example:
+```
+when_dp_fails/
+  └── java/
+    └── matthew_maksymilian_miezaniec/
+      ├── greedy_attempt/
+      │ ├── notes/
+      │ │ ├── theory.tex
+      │ │ └── mathematics.tex
+      │ └── code/
+      │ └── submission.java
+      │
+      └── dp_solution/
+        ├── notes/
+        │ ├── theory.tex
+        │ └── mathematics.tex
+        └── code/
+        └── submission.java
+```
+
+Each `<approach_name>` directory represents **one coherent solution strategy**.
+
+---
+
+## Notes Directory
+
+The `notes/` directory is **mandatory**.
+
+### `theory.tex`
+This file must include:
+- a full theoretical explanation of the algorithmic approach,
+- justification of design decisions,
+- discussion of alternative paradigms where relevant,
+- complexity analysis.
+
+It should be readable as a **standalone exposition**.
+
+### `mathematics.tex`
+This file is required **only when** the solution relies on non-trivial
+mathematical reasoning or proof-based arguments.
+
+When present, it must include:
+- relevant definitions, lemmas, and derivations,
+- formal proofs where appropriate,
+- references to known results when applicable.
+
+It must not contain general algorithmic discussion or implementation details.
+
+---
+
+## Code Directory
+
+Each `code/` directory must contain **exactly one primary submission file**.
+
+The code must:
+- be clean, sanitised, and production-quality,
+- follow standard conventions for the chosen language,
+- contain no malicious, obfuscated, or misleading behaviour,
+- be suitable for direct compilation or execution.
+
+---
+
+### Code–Notes Alignment
+
+Implementations must:
+- follow logically from the corresponding notes,
+- include comments referencing relevant sections of the notes,
+- preserve traceability between theory and code.
+
+Contributors are encouraged to:
+- annotate code with references to sections or equations,
+- structure implementations to mirror theoretical decomposition.
+
+---
+
+## General Requirements
+
+- All submissions must be original work or properly attributed adaptations.
+- Multiple authors may submit independent solutions to the same problem.
+- Language-specific conventions must be respected.
+- Readability and correctness take precedence over brevity or cleverness.
+
+Submissions that do not follow this structure may be requested to revise
+before acceptance.
 
 ---
 
@@ -85,12 +186,12 @@ Eisengrau is a multi-author repository.
 
 If you contribute:
 - you retain authorship of your contributions,
-- your name may be listed in file headers or documentation where appropriate,
-- your contribution will be distributed under the repository’s license.
+- your name may appear in file headers or documentation,
+- your work is distributed under the repository’s license.
 
-When adapting or extending existing material:
-- preserve attribution to original authors,
-- clearly indicate what has been modified or added.
+When adapting existing material:
+- preserve original attribution,
+- clearly indicate modifications or extensions.
 
 If you believe attribution is missing or incorrect, please open an issue.
 
@@ -98,37 +199,33 @@ If you believe attribution is missing or incorrect, please open an issue.
 
 ## Licensing
 
-By contributing to this repository, you agree that:
+By contributing, you agree that:
 - your contributions are licensed under the same license as the repository,
-- others may reuse your contributions under the terms of that license,
-  with proper attribution.
+- others may reuse your work under those terms with proper attribution.
 
-If you are unsure whether material you are contributing is compatible with
-this license, do not submit it without clarification.
+If you are unsure whether material is compatible with this license,
+do not submit it without clarification.
 
 ---
 
 ## Academic Integrity
 
 If you are a student:
-- ensure that your contributions comply with your institution’s academic
-  integrity policies,
-- do not submit assessed coursework or restricted material.
+- ensure compliance with your institution’s academic integrity policies,
+- do not submit assessed or restricted coursework.
 
-This repository is intended for learning and teaching, not for violating
-assessment rules.
+This repository exists for learning and teaching, not for violating rules.
 
 ---
 
 ## How to Contribute
 
-Typical contribution flow:
 1. Fork the repository.
 2. Create a new branch for your changes.
-3. Add your contribution following the existing structure.
-4. Open a pull request with a clear description of what you added and why.
+3. Add your contribution following the structure above.
+4. Open a pull request describing what you added and why.
 
-Small, focused contributions are preferred over large, unfocused ones.
+Small, focused contributions are preferred.
 
 ---
 
