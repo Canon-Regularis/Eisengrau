@@ -227,6 +227,17 @@ repository.
 If you believe your contribution is not properly attributed, please open an issue
 or contact the maintainers.
 
+### Organisational Contributors
+
+**King’s Competitive Programming Club (KCPC)**
+
+KCPC makes periodic contributions to this repository and is a downstream
+consumer of the project.
+
+Contributions by KCPC members are made in an individual or representative
+capacity and do not imply ownership, governance authority, or maintainer
+status unless explicitly stated.
+
 ---
 
 ## Final Note
