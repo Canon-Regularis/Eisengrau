@@ -203,7 +203,13 @@ any specific contest, interview, or assessment.
 **Matthew Maksymilian Miezaniec**  
 President @ KCPC · President @ Orthant Research Group
 
-Responsible for:
+**Mehmet Kutay Bozkurt**
+Vice-President @ KCPC
+
+**Annoor (Beed) Mustafi**  
+Treasurer @ KCPC · General-Secretary @ KCPC
+
+All listed founders and lead maintainers share **equal roles and responsibilities**, including responsibility for:
 - the original design and structure of the repository,
 - its pedagogical direction and taxonomy,
 - overall maintenance and review.
