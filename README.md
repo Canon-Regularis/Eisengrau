@@ -203,7 +203,7 @@ any specific contest, interview, or assessment.
 **Matthew Maksymilian Miezaniec**  
 President @ KCPC · President @ Orthant Research Group
 
-**Mehmet Kutay Bozkurt**
+**Mehmet Kutay Bozkurt**  
 Vice-President @ KCPC
 
 **Annoor (Beed) Mustafi**  
