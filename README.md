@@ -198,20 +198,37 @@ any specific contest, interview, or assessment.
 
 ## Maintainers and Contributors
 
-### Project Founder and Lead Maintainer
+### Project Founders and Lead Maintainers
 
 **Matthew Maksymilian Miezaniec**  
+King's College London (KCL) - Computer Science  
+University of Edinburgh - Mathematics and Statistics
 
 **Mehmet Kutay Bozkurt**  
+King's College London (KCL) - Computer Science
 
-**Annoor (Beed) Mustafi**  
+**Annoor "Beed" Mustafi**  
+University of Cambridge - Mathematics  
+King's College London (KCL) - Computer Science
 
-**Marcell Németh**
+**Marcell Nemeth**  
+King's College London (KCL) - Computer Science
 
 All listed founders and lead maintainers share **equal roles and responsibilities**, including responsibility for:
 - the original design and structure of the repository,
 - its pedagogical direction and taxonomy,
-- overall maintenance and review.
+- overall maintenance, review, and long-term stewardship.
+
+### Lead Maintainer(s)
+
+**Keishi Suzuki**  
+University of Toronto - Mathematics and Computer Science
+
+The lead maintainer(s) share responsibility for:
+- maintaining and reviewing contributions to the repository,
+- ensuring consistency with the established structure, taxonomy, and pedagogical goals,
+- coordinating reviews, merges, and issue resolution,
+- supporting the long-term stability, correctness, and maintainability of the codebase.
 
 ### Contributors
 
